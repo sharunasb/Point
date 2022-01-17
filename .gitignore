@@ -1,0 +1,7 @@
+*.cache
+*.exe
+*.config
+Basic_tarinings/bin/Debug/Basic_tarinings.pdb
+Basic_tarinings/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+Basic_tarinings/obj/Debug/Basic_tarinings.pdb
+Basic_tarinings/obj/Debug/Basic_trainings.csproj.FileListAbsolute.txt
