@@ -47,12 +47,12 @@ namespace Basic_trainings
             Point PointResult = new Point(x.x + y.x, y.y + x.y);
             return PointResult;
         }
-        public double GetDistance(Point point)
+        public int GetDistance(Point point)
         {
-            double result = (this.x - point.x) * (this.x - point.x);
+            int result = (this.x - point.x) * (this.x - point.x);
             return result;
         }
-    }
+     }
 
 
     sealed class Point3D : Point

@@ -18,13 +18,21 @@ namespace Basic_trainings
             this.b = b;
             this.c = c;
         }
-        public double GetPerimeter()
+        public int GetPerimeter()
         {
-            double distance1 = a.GetDistance(b);
-            double distance2 = b.GetDistance(c);
-            double distance3 = c.GetDistance(a);
+            int distance1 = a.GetDistance(b);
+            int distance2 = b.GetDistance(c);
+            int distance3 = c.GetDistance(a);
 
             return distance1 + distance2 + distance3;
         }
+        public virtual double AreaOfTriangle()
+        {
+            double perimeter = a.GetDistance(b) + b.GetDistance(c) + c.GetDistance(a);
+            double area = (double)Math.Sqrt(perimeter * (perimeter - a.GetDistance(b)) * (perimeter - b.GetDistance(c)) * (perimeter - c.GetDistance(a)));
+            return area;
+           
+        }
+        
     }
 }

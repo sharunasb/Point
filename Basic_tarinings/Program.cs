@@ -8,6 +8,7 @@ namespace Basic_trainings
 {
     public class Program
     {
+
         public static void Main()
         {
             Point point2D = new Point(2, 6);
@@ -36,8 +37,24 @@ namespace Basic_trainings
             Point c = new Point(1, 3);
 
             Triangle myTriangle = new Triangle(a, b, c);
-            double perimeter = myTriangle.GetPerimeter();
+            int perimeter = myTriangle.GetPerimeter();
             Console.WriteLine($"Triangle Perimeter is: {perimeter}");
+
+
+            Triangle myTriangle2 = new Triangle(a, b, c);
+            double area = myTriangle2.AreaOfTriangle();
+            Console.WriteLine($"Triangle area is: {area}");
+        
+             
+            RectangularTriangle myTriangle3 = new RectangularTriangle(a, b, c);
+            double recarea = myTriangle3.AreaOfTriangle();
+            Console.WriteLine($"Rectangular Triangle area is: {recarea}");
+
+            EquilateralTriangle myTriangle4 = new EquilateralTriangle(a, b, c);
+            double eqarea = myTriangle4.AreaOfTriangle();
+            Console.WriteLine($"Equilateral Triangle area is: {eqarea}");
+
+            
         }
     }
 }
